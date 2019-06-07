@@ -162,3 +162,200 @@ header{
         }
     }
 }
+
+#cadastro{
+    width: 100%;
+    background-color: #1ec4d5;
+    padding-top: 3.25rem;
+
+    .row{
+        justify-content: center;
+        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        
+        h2{
+            font-size: 4.6875rem;
+            font-weight: bold;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 3rem;
+
+            .form-control{
+                border-radius: 0px;
+                border: 1px solid #000000;
+                margin: 5px;
+                color: #000000;
+                background: #1ec4d5;
+
+                
+
+                .col-md-5{
+                    padding-right: 10px!important;
+                    padding-left: 10px!important;
+                }
+            }
+
+            input::placeholder{
+                color: #000000;
+                font-weight: 300;
+                font-style: italic;
+                font-size: 0.7125rem;
+            }
+
+            .col-md-12{
+                display: flex;
+                justify-content: center;
+                padding-top: 3.25rem;
+                padding-bottom: 3.375rem;
+                align-items: center;
+
+                .pergunta{
+                    font-weight: bold;
+                    font-size: 1.375rem;
+                }
+
+
+                .form-check{
+                    align-items: center;
+    
+                    .container-check {
+                        display: block;
+                        position: relative;
+                        padding-left: 22px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 1.125rem;;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                      }
+                      
+                      /* Hide the browser's default checkbox */
+                      .container-check input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                      }
+                      
+                      /* Create a custom checkbox */
+                      .checkmark {
+                        position: absolute;
+                        top: 6px;
+                        left: 0;
+                        height: 15px;
+                        width: 15px;
+                        background-color: #1ec4d5;
+                        border: 1px solid #000000;
+                      }
+                      
+                      /* On mouse-over, add a grey background color */
+                      .container-check:hover input ~ .checkmark {
+                        background-color: #1ec4d5;
+                      }
+                      
+                      /* When the checkbox is checked, add a blue background */
+                      .container-check input:checked ~ .checkmark {
+                        background-color: #000000;
+                      }
+                      
+                      /* Create the checkmark/indicator (hidden when not checked) */
+                      .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                      }
+                      
+                      /* Show the checkmark when checked */
+                      .container-check input:checked ~ .checkmark:after {
+                        display: block;
+                      }
+                      
+                      /* Style the checkmark/indicator */
+                      .container-check .checkmark:after {
+                        left: 5px;
+                        top: 0px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                      }
+                }
+            }
+            
+            .checkboxes{
+                display: inline-flex;
+            }
+            
+            .btn{
+                background: #000000;
+                color: #ffffff;
+                border-radius: 0px;
+                width: 33%;
+                font-size: 1.225rem;
+                font-weight: bold;
+                font-family: 'IBM Plex Sans Condensed', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+#como-chegar{
+    padding-top: 6.25rem;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    
+    .row{
+        justify-content: center;
+
+        h2{
+            font-size: 4.035rem;
+            font-weight: bold;
+        }
+
+        .col-md-12{
+            padding-left: 0px!important;
+            padding-right: 0px!important;
+
+            .mapa{
+                padding-top: 3.25rem;
+                padding-bottom: 6.25rem;
+            }
+
+            .sociais{
+                display: flex;
+                justify-content: space-evenly;
+
+                .lista{
+                    
+                    .texto{
+                        position: relative;
+                        font-size: 2.1875rem;
+                        font-weight: bold;
+                        line-height: 1.3rem;
+                        text-transform: uppercase;
+                        vertical-align: middle;
+
+                        &::before{
+                            content: "";
+                            background-color: #1ec4d5;
+                            width: 5px;
+                            height: 80px;
+                            position: absolute;
+                            left: -7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
