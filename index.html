@@ -5,39 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:200i,300,400,500,700|Montserrat:200,400,700,800,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:200i,300,400,500,700|Montserrat:200,400,700,800,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/assets/css/bootstrap.css">
     <link rel="stylesheet" href="src/assets/css/app.css">
     <title>Document</title>
 </head>
 
-<body>
+<body id="page-top">
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="src/assets/images/logo_mpm.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <nav class="navbar navbar-expand-lg fixed-top">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
+                aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="textoNavbar">
                 <ul class="navbar-nav">
+                    <a class="navbar-brand rolagem" href="#page-top"><img src="src/assets/images/logo_mpm.png" alt=""></a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SOBRE</a>
+                        <a class="nav-link rolagem" href="#sobre">SOBRE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">DESFILE</a>
+                        <a class="nav-link rolagem" href="#desfile">DESFILE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONVIDADOS</a>
+                        <a class="nav-link rolagem" href="#convidados">CONVIDADOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SORTEIO DE CARRO</a>
+                        <a class="nav-link rolagem" href="#sorteio">SORTEIO DE CARRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LINEUP</a>
+                        <a class="nav-link rolagem" href="#lineup">LINEUP</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn">CADASTRE-SE</button>
+                        <button type="button" class="btn"><a class="rolagem" href="#cadastro">CADASTRE-SE</a></button>
                     </li>
                 </ul>
             </div>
@@ -45,10 +50,33 @@
     </header>
 
     <div id="banner">
-        <div class="banner-texto">
-            <div class="texto">
-                <p>MEGA FASHION WEEK <hr> <span class="mfw">MFW 25</span></p>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-texto">
+                        <div class="texto">
+                            <div class="texto-mega">
+                                <p>Mega Fashion Week <span></span></p>
+                            </div>
+                        </div>
+                        <div class="texto-mfw">
+                            <p>Mfw 25</p>
+                        </div>
+                        <div class="texto-futuro">
+                            <p>o Fututo</p>
+                            <p>e a moda</p>
+                            <p>estão aqui</p>
+                        </div>
+                        <div class="save">
+                            <div class="save-date">
+                                <p>Save <span>the</span> Date</p>
+                            </div>
+                            <div class="date">
+                                <p>05,06 e 07/Ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -56,17 +84,37 @@
     <section id="sobre">
         <div class="container">
             <div class="row">
+                <h2>SOBRE</h2>
                 <div class="col-md-12">
                     <div class="sobre-texto">
-                        <h2>SOBRE</h2>
-                        <p>As maiores tendências da primavera-verão 2019 chegam primeiro ao Mega Fashion Week 25. Cada visitante vai viver momentos únicos, com lançamentos das maiores marcas de moda para atacado, celebridades convidadas, sorteio de um carro zero e cupom em dobro no domingo.</p>
+                        <p>As maiores tendências da primavera-verão 2019 chegam primeiro ao Mega Fashion Week 25. Cada
+                            visitante vai viver momentos únicos, com lançamentos das maiores marcas de moda para
+                            atacado, celebridades convidadas, sorteio de um carro zero e cupom em dobro no domingo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contador"></section>
+    <section id="contador">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contador-session">
+                        <div class="texto-contador">
+                            <p>Faltam</p>
+                            <p>Apenas</p>
+                        </div>
+                        <div id="timer"></div>
+                        <div class="texto-contador">
+                            <p>Faltam</p>
+                            <p>Apenas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="desfile">
         <div class="container">
@@ -78,7 +126,7 @@
                         <p>vão exibir suas coleções em desfiles imperdíveis. Confira as marcas participantes:</p>
                     </div>
                     <div class="col-md-8 desfile-img">
-                        <img src="src/assets/images/foto-desfile.png" alt="">
+                        <img class="img-fluid" src="src/assets/images/foto-desfile.png" alt="">
                     </div>
                 </div>
             </div>
@@ -86,38 +134,176 @@
     </section>
 
     <section id="convidados">
-       <div class="container">
+        <div class="container">
             <div class="row">
+                <h2>CONVIDADOS <span class="convidados-sub-titulo">QUE COMENTARÃO OS DESFILES</span></h2>
                 <div class="col-md-12">
-                        <h2>CONVIDADOS <span class="convidados-sub-titulo">QUE COMENTARÃO OS DESFILES</span></h2>
+                    <div class="convidados-session">
+                        <div class="col-md-4">
+                            <div class="convidados-1">
+                                <div class="texto-convidados">
+                                    <p>Arlindo</p>
+                                    <p>Grund</p>
+                                    <div class="data-convidados">
+                                        <div class="data">
+                                            <p>05/08</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="src/assets/images/convidados-1.png" alt="">
+                                    <div class="descricao-convidado">
+                                        <p>É apresentador dos programas Esquadrão da</p>
+                                        <p>Moda, do SBT, e A Roupa Ideal, da Sony. Atua</p>
+                                        <p>também como stylist e consultor de moda e</p>
+                                        <p>tem dois livros publicados sobre os temas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="convidados-2">
+                                <div class="texto-convidados">
+                                    <p>Dudu</p>
+                                    <p>Bertholini</p>
+                                    <div class="data-convidados">
+                                        <div class="data">
+                                            <p>07/08</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="src/assets/images/convidados-2.png" alt="">
+                                    <div class="descricao-convidado">
+                                        <p>Estilista renomado, já produziu inúmeros</p>
+                                        <p>editoriais de moda para as revistas Vogue Brasil,</p>
+                                        <p>Elle Brasil e I-D. Participou do programas</p>
+                                        <p>Brazil’s Next Top Model e Amor e Sexo.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="convidados-3">
+                                <div class="texto-convidados">
+                                    <p>Mônica</p>
+                                    <p>Salgado</p>
+                                    <div class="data-convidados">
+                                        <div class="data">
+                                            <p>07/08</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img class="img-fluid" src="src/assets/images/convidados-3.png" alt="">
+                                    <div class="descricao-convidado">
+                                        <p>Ex-diretora de redação da revista Glamour</p>
+                                        <p>Brasil, apresentadora do Video Show da Globo</p>
+                                        <p>e digital influencer, é considerada como uma</p>
+                                        <p>grande voz do empoderamento feminino.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
-            <div class="col-md-12">
-                <div class="row convidados-session">
-                    <div class="col-md-4">
-                        <div class="convidados-1">
-                            <p>Arlindo</p><br>
-                            <p>Grund</p><br>
-                            <p class="data">05/08</p>
-                            <img class="img-1" src="src/assets/images/convidados-1.png" alt="">
+        </div>
+    </section>
+
+    <section id="sorteio">
+        <div class="container">
+            <div class="row">
+                <h2>SORTEIO <span>DE CARRO</span></h2>
+                <div class="col-md-12">
+                    <div class="sorteio-session">
+                        <div class="col-md-4">
+                            <div class="texto-sorteio">
+                                <p>Concorra a um</p>
+                                <span>FIAT ARGO</span>
+                                <p class="ligth">De 05 a 10/Ago</p>
+                            </div>
+                            <div class="texto-sorteio-2">
+                                <p>A cada R$ 3.000 em compras durante o Mega</p>
+                                <p>Fashion Week 25, você leva um cupom</p>
+                                <p>exclusivo para concorrer ao sorteio do Fiat Argo. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <img class="img-fluid" src="src/assets/images/argo.png" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="convidados-2">
-                            <p>arlindo grund<span class="data">05/08</span></p>
-                            <img class="img-1" src="src/assets/images/convidados-2.png" alt="">
+                </div>
+                <div class="col-md-12">
+                    <div class="sorteio-cupom">
+                        <div class="valor">
+                            <div class="texto-valor">
+                                <p>A cada</p>
+                                <p class="preco">R$ 3MIL</p>
+                                <span class="direita">Em Compras</span>
+                            </div>
+                        </div>
+                        <p class="igual">=</p>
+                        <div class="cupom">
+                            <div class="texto-cupom">
+                                <p>1 Cupom</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="convidados-1">
-                            <p>arlindo grund<span class="data">05/08</span></p>
-                            <img class="img-1" src="src/assets/images/convidados-3.png" alt="">
+                </div>
+                <div class="col-md-12">
+                    <div class="cupom-dobro">
+                        <div class="texto-dobro">
+                            <p>Cupom <span>em</span> Dobro</p>
+                        </div>
+                        <div class="bg-dobro">
+                            <div class="texto-bg">
+                                <p>Aos Domingos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-       </div>
+        </div>
+    </section>
+
+    <section id="lineup">
+        <div class="container">
+            <div class="row">
+                <h2>LINEUP</h2>
+                <div class="col-md-12">
+                    <div class="lineup-session">
+                        <div class="horarios">
+                            <p><b>06hás10h</b></p>
+                            <p>Café da Manhã</p>
+                            <p>Para Clientes</p>
+                        </div>
+                        <div class="horarios order1">
+                            <p><b>08h</b></p>
+                            <p>Lojas Abertas</p>
+                            <p>Para Comprar</p>
+                        </div>
+                        <div class="horarios order2">
+                            <p><b>10h</b></p>
+                            <p>Desfile</p>
+                            <p>Comentado</p>
+                        </div>
+                        <div class="horarios order3">
+                            <p><b>15h</b></p>
+                            <p>Desfile</p>
+                            <p>Comttentado</p>
+                        </div>
+                        <div class="horarios order4">
+                            <p><b>18h</b></p>
+                            <p>Lojas</p>
+                            <p>Fechadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="cadastro">
@@ -129,25 +315,32 @@
                         <div class="col-md-5">
                             <div class="form-row">
                                 <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="nome" required>
+                                    <input type="text" class="form-control" placeholder="nome" pattern="[a-z\s]+$"
+                                        required>
                                 </div>
                                 <div class="col-5">
-                                    <input type="tel" class="form-control" placeholder="telefone" required>
+                                    <input type="tel" class="form-control" placeholder="telefone" minlength="9"
+                                        maxlength="13" pattern="([0-9]{1,3}\.)?[0-9]{1,3},[0-9]{2}$" required>
                                 </div>
                                 <div class="col-7">
-                                    <input type="text" class="form-control" placeholder="cnpj">
+                                    <input type="text" class="form-control" placeholder="cnpj" minlength="14"
+                                        maxlength="14" pattern="([0-9]{1,3}\.)?[0-9]{1,3},[0-9]{2}$" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="email" required>
+                                    <input type="text" class="form-control" placeholder="email"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="endereço">
+                                    <input type="text" class="form-control" placeholder="endereço" pattern="[a-z\s]+$"
+                                        required>
                                 </div>
                                 <div class="col-4">
-                                    <input type="text" class="form-control" placeholder="cidade">
+                                    <input type="text" class="form-control" placeholder="cidade" pattern="[a-z\s]+$"
+                                        required>
                                 </div>
                                 <div class="col-2">
-                                    <input type="text" class="form-control" placeholder="cep">
+                                    <input type="text" class="form-control" placeholder="cep" minlength="8"
+                                        maxlength="8" pattern="([0-9]{1,3}\.)?[0-9]{1,3},[0-9]{2}$" required>
                                 </div>
                             </div>
                         </div>
@@ -161,13 +354,15 @@
                                     <input type="tel" class="form-control" placeholder="nome fantasia" required>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="@instagram loja" required>
+                                    <input type="text" class="form-control" placeholder="@instagram loja"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="@facebook loja">
+                                    <input type="text" class="form-control" placeholder="@facebook loja"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control" placeholder="site loja">
+                                    <input type="text" class="form-control" placeholder="site loja" required>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +373,7 @@
                             <div class="checkboxes">
                                 <div class="form-check">
                                     <label class="container-check">
-                                        <input type="checkbox">
+                                        <input type="checkbox" required>
                                         <span class="checkmark"></span> 06/08
                                     </label>
                                 </div>
@@ -215,34 +410,74 @@
                 <h2>COMO CHEGAR</h2>
                 <div class="col-md-12">
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.89144867383!2d-46.62079428462474!3d-23.53640636655713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58e44be7b32d%3A0xcaccd5e8ec4fb2f1!2sShopping+Mega+Polo+Moda!5e0!3m2!1spt-BR!2sbr!4v1559934309019!5m2!1spt-BR!2sbr" width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.89144867383!2d-46.62079428462474!3d-23.53640636655713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58e44be7b32d%3A0xcaccd5e8ec4fb2f1!2sShopping+Mega+Polo+Moda!5e0!3m2!1spt-BR!2sbr!4v1559934309019!5m2!1spt-BR!2sbr"
+                            width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <div class="sociais">
                         <div class="lista">
-                            <div class="texto">
+                            <div class="texto order1">
                                 <p>Fique</p>
                                 <p>Por Dentro</p>
                             </div>
                             <div class="icons">
                                 <div>
-                                    <img class="img-fluid" src="src/assets/images/facebook.png" alt="">
-                                    <img class="img-fluid" src="src/assets/images/instagram.png" alt="">
-                                    <img class="img-fluid" src="src/assets/images/youtube.png" alt="">
+                                    <a href="#"><img class="img-fluid" src="src/assets/images/facebook.png" alt=""></a>
+                                    <a href="#"><img class="img-fluid" src="src/assets/images/instagram.png" alt=""></a>
+                                    <a href="#"><img class="img-fluid" src="src/assets/images/youtube.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
-                         <div class="lista">
+                        <div class="lista">
                             <div class="texto">
                                 <p>Siga</p>
                                 <p>Nossas</p>
                                 <p>Redes</p>
                             </div>
+                            <div class="texto-lista">
+                                <p>@megapolomoda</p>
+                            </div>
                         </div>
-                         <div class="lista">
+                        <div class="lista">
                             <div class="texto">
                                 <p>Confirme</p>
                                 <p>Sua Presença</p>
                                 <p>No Facebook</p>
+                            </div>
+                            <div class="texto-lista">
+                                <p>evento_facebook</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="modals">
+                        <div class="thumbs">
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza-claro.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza-claro.png" alt="">
+                            </div>
+                        </div>
+                        <div class="thumbs">
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza-claro.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza-claro.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-fluid" src="src/assets/images/bg-cinza.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -251,9 +486,31 @@
         </div>
     </section>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="texto-footer">
+                        <div>
+                            <p>Rua Barão de Ladário, n 566/670 - Brás, São Paulo, SP - 03010-000 - (11) 3311-2800</p>
+                        </div>
+                        <div>
+                            <a href="#"><img class="img-fluid" src="src/assets/images/logo-2b.png" alt=""></a>
+                        </div>
+                        <div>
+                            <p>2018 MFW25 © Mega Polo Moda. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="src/assets/js/jquery.min.js"></script>
     <script src="src/assets/js/bootstrap.min.js"></script>
     <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/contador.js"></script>
+    <script src="src/assets/js/scroll.js"></script>
 </body>
 
 </html>
